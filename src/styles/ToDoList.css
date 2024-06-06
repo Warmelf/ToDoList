@@ -1,0 +1,130 @@
+.to-do-list_input-container-bg {
+    background: url('../assets/images/input-Card.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 370px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-list_input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0 0 20px;
+}
+
+.to-do-list_input-container-bg .input {
+    border: 3px solid #BFE1D7;
+    border-radius: 15px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.to-do-list_input-container .input:focus {
+    border-color: #74dabc;
+}
+
+.to-do-list_input-container-bg .add-btn, .filter-btn {
+    border: 3px solid #BFE1D7;
+    border-radius: 15px;
+    padding: 5px 10px;
+    outline: none;
+    background: linear-gradient(to bottom right, #95dcc6, #9a9fef);
+}
+
+.to-do-list_input-container-bg .add-btn:disabled  {
+    opacity: 0.8;
+}
+
+.to-do-list_input-container-bg .add-btn:hover, .filter-btn:hover  {
+    cursor: pointer;
+}
+
+.to-do-list_input-container-bg .add-btn:active, .filter-btn:active {
+    background: linear-gradient(to bottom right, #6bdeb9, #6871eb);
+}
+
+.to-do-list_filter-btns {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.to-do-list_filter-btns .filter-btn {
+    min-width: 100px;
+}
+
+.to-do-list_filter-btns .filter-btn.active-btn {
+    background: linear-gradient(to bottom right, #4fdaae, #444fe7);
+}
+
+.to-do-list_items {
+    list-style: none;
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.to-do-list_item {
+    background: linear-gradient(to bottom right, #95dcc6, #9a9fef);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-label {
+    display: flex;
+}
+
+.item-label input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 0.15em;
+    margin-right: 0.5em;
+    border: 0.15em solid #007a7e;
+    outline: none;
+    cursor: pointer;
+}
+
+.item-label input.checked {
+    background-color: #007a7e;
+    position: relative;
+}
+
+.item-label input.checked::before {
+    content: "";
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    right: 1px;
+    top: -5px;
+}
+
+.item-label .title.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.remove-btn {
+    background: url('../assets/images/trash.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}

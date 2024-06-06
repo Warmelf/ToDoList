@@ -1,3 +1,7 @@
+# ToDoList
+Add items to your to-do list!
+Remove items or filter by completion. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
